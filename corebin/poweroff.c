@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <time.h>
 
 // Function to sleep for a specified amount of time
 void sleep_for_time(int seconds) {

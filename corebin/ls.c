@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <string.h>
-#include <unistd.h>
 
 #define VERSION "1.0 CatK-ls"
 

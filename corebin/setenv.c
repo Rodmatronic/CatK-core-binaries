@@ -3,7 +3,6 @@
 // Written by Rodmatronics
 
 #include <stdio.h>
-#include <catk.h>
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
