@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
                 sleep_time = atoi(optarg);
                 break;
             default:
-                printf("Usage: %s [-r] [-s] [-h] [-t seconds]\n", argv[0]);
+                printf("poweroff: usage: %s [-r] [-s] [-h] [-t seconds]\n", argv[0]);
                 return -1;
         }
     }
