@@ -20,7 +20,7 @@ int main() {
     } else {
         // If no password record is found, print an error message
         printf("whoami: Failed to get username for UID %d\n", uid);
-        return 1;
+        return -1;
     }
     
     return 0;

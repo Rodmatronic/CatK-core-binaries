@@ -1,5 +1,5 @@
 
-// which - CatK system binary
+// which - core CatK system binary
 // Written by Rodmatronics
 
 #include <stdio.h>

@@ -1,5 +1,5 @@
 
-// sync - CatK system binary
+// sync - core CatK system binary
 // Written by Rodmatronics
 
 #include <stdio.h>

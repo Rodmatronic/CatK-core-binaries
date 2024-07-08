@@ -1,5 +1,5 @@
 
-// grep - CatK system binary
+// grep - core CatK system binary
 // Written by Rodmatronics
 
 #include <stdio.h>

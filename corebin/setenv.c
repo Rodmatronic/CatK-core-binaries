@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 
     if (setenv(variable, value, 1) != 0) {
         printf("Failed to set ENV\n");
-        return 1;
+        return -1;
     }
 
     printf("setenv: Environment variable %s set to %s\n", variable, value);
