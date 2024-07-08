@@ -3,8 +3,9 @@
 // Written by Rodmatronics
 
 #include <stdio.h>
-#include <stdlib.h>
+//#include <stdlib.h>
 #include <catk.h>
+#include <time.h>
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {

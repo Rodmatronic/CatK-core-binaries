@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc > 1) {
-        printf("arch: Usage: %s [-V]\n", argv[0]);
+        printf("arch: usage: %s [-V]\n", argv[0]);
         return -1;
     }
 

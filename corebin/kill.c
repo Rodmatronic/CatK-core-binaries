@@ -12,7 +12,7 @@ int pid = 0;
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        printf("kill: Usage: %s [-V | -q | <pid>]\n", argv[0]);
+        printf("kill: usage: %s [-V | -q | <pid>]\n", argv[0]);
         return -1;
     }
 
