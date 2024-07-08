@@ -11,6 +11,7 @@
 void sleep_for_time(int seconds) {
     printf("poweroff: System will go down in %d seconds...\n", seconds);
     sleep(seconds);
+    printf("System shutdown has arrived!\n");
 }
 
 int main(int argc, char *argv[]) {

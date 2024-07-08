@@ -10,20 +10,9 @@ void hexdump(FILE *fp) {
     size_t offset = 0;
 
     while ((bytes_read = fread(buffer, 1, sizeof(buffer), fp)) > 0) {
-        printf("%08zx  ", offset);
+        //printf("%08zx  ", offset);
         for (size_t i = 0; i < bytes_read; i++) {
             printf("%02x ", buffer[i]);
-        }
-        for (size_t i = bytes_read; i < sizeof(buffer); i++) {
-            printf("   ");
-        }
-        printf(" ");
-        for (size_t i = 0; i < bytes_read; i++) {
-            if (buffer[i] >= 32 && buffer[i] <= 126) {
-                printf("%c", buffer[i]);
-            } else {
-                printf(".");
-            }
         }
         printf("\n");
         offset += bytes_read;
