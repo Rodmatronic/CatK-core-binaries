@@ -14,7 +14,7 @@ void list_directory(const char *path) {
     DIR *dp = opendir(path);
 
     if (dp == NULL) {
-        perror("opendir");
+        printf("ls: failed to open file\n");
         return;
     }
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
         // No arguments provided, use current working directory
         path = getenv("PWD");
         if (path == NULL) {
-            perror("getenv");
+            printf("ls: failed to get PWD env variable\n");
             return -1;
         }
     } else if (strcmp(argv[1], "-V") == 0) {

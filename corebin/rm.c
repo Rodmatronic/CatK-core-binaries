@@ -11,7 +11,7 @@
 
 int remove_file(const char *path) {
     if (unlink(path) != 0) {
-        printf("rm: Failed to remove file");
+        printf("rm: Failed to remove file\n");
         return -1;
     }
     return 0;
@@ -23,7 +23,7 @@ int remove_directory(const char *path) {
     char filepath[4096];
 
     if (!dir) {
-        printf("rm: Failed to remove the file: no such file or directory");
+        printf("rm: Failed to remove the file: no such file or directory\n");
         return -1;
     }
 
@@ -36,7 +36,7 @@ int remove_directory(const char *path) {
 
         struct stat st;
         if (stat(filepath, &st) == -1) {
-            printf("rm: Failed to remove the file/directory: no such file or directory");
+            printf("rm: Failed to remove the file/directory: no such file or directory\n");
             continue;
         }
 
@@ -50,7 +50,7 @@ int remove_directory(const char *path) {
     closedir(dir);
 
     if (rmdir(path) != 0) {
-        printf("rm: Failed to remove the file/directory");
+        printf("rm: Failed to remove the file/directory\n");
         return -1;
     }
     return 0;

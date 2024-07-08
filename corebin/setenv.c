@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     const char *value = argv[2];
 
     if (setenv(variable, value, 1) != 0) {
-        printf("Failed to set ENV");
+        printf("Failed to set ENV\n");
         return 1;
     }
 

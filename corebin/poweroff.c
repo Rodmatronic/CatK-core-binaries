@@ -60,14 +60,14 @@ int main(int argc, char *argv[]) {
         case 3:
             printf("poweroff: halt issued to kernel\nSYSTEM IS GOING DOWN NOW!!\n");
             if (system("halt") == -1) {
-                perror("poweroff: Failed to halt");
+                printf("poweroff: Failed to halt\n");
                 return -1;
             }
             break;
         default:
             printf("poweroff: no arguments, poweroff issued to kernel\nSYSTEM IS GOING DOWN NOW!!\n");
             if (system("shutdown") == -1) {
-                perror("poweroff: Failed to poweroff");
+                printf("poweroff: Failed to poweroff\n");
                 return -1;
             }
     }

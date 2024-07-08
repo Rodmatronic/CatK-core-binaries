@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
         {
             printf("%s\n", system_info.machine);
         } else {
-            printf("Failed to get ARCH from utsname");
+            printf("Failed to get ARCH from utsname\n");
             return -1;
         }
     }
