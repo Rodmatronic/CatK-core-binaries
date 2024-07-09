@@ -45,6 +45,7 @@ int main(int argc, char *argv[]) {
 
     switch (operation) {
         case 1:
+            sync();
             printf("poweroff: reboot issued to kernel\nSYSTEM IS GOING DOWN NOW!!\n");
             if (system("reboot") == -1) {
                 printf("poweroff: Failed to reboot");
@@ -52,6 +53,7 @@ int main(int argc, char *argv[]) {
             }
             break;
         case 2:
+            sync();
             printf("poweroff: shutdown issued to kernel\nSYSTEM IS GOING DOWN NOW!!\n");
             if (system("shutdown now") == -1) {
                 printf("poweroff: Failed to shutdown");
@@ -59,6 +61,7 @@ int main(int argc, char *argv[]) {
             }
             break;
         case 3:
+            sync();
             printf("poweroff: halt issued to kernel\nSYSTEM IS GOING DOWN NOW!!\n");
             if (system("halt") == -1) {
                 printf("poweroff: Failed to halt\n");
@@ -66,6 +69,7 @@ int main(int argc, char *argv[]) {
             }
             break;
         default:
+            sync();
             printf("poweroff: no arguments, poweroff issued to kernel\nSYSTEM IS GOING DOWN NOW!!\n");
             if (system("shutdown") == -1) {
                 printf("poweroff: Failed to poweroff\n");

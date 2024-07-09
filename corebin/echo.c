@@ -39,7 +39,7 @@ int write_to_file(const char *filename, const char *content, int append) {
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         printf("\n"); // ECHO normally prints a newline even when run without args
-        return 1;
+        return 0;
     }
 
     if (strcmp(argv[1], "-V") == 0) {
@@ -97,7 +97,7 @@ int main(int argc, char *argv[]) {
         if (redirect_index + 1 >= argc) {
             printf("echo: missing file operand after '%s'\n", argv[redirect_index]);
             free(output);
-            return 1;
+            return 0;
         }
         write_to_file(argv[redirect_index + 1], output, append);
     } else {

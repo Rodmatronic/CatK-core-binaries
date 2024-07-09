@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
-        printf("usleep: usage: %s milliseconds\n", argv[0]);
+        printf("usleep: usage: %s <milliseconds>\n", argv[0]);
         return -1;
     }
 
