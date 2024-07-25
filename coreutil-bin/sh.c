@@ -1,3 +1,7 @@
+
+// sh - core CatK system binary
+// Written by Rodmatronics
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
